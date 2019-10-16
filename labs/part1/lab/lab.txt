@@ -1,0 +1,31 @@
+In this lab we will build the frontend for a books inventory application.
+The application will get data from the backend, a list of books (name, author, 
+year, and quantity) and display them in a sorted list.
+
+A series of ignored tests have been provided. Take one test at a time, change 
+xit to it to enable the test. Then implement minimum code to make that test to 
+pass. Once a test passes, leave it enabled and move on to the next test.
+
+Let's work on these files, in the following order:
+book.spec.ts
+books.service.spec.ts
+books.component.spec.ts
+books-sort.pipe.spec.ts
+app.component.spec.ts
+
+To run the tests and then the program, please use the following commands:
+
+1. npm install
+
+2. npm test
+Leave the above running until all tests have been enabled (one at a time of course) and all tests are passing.
+
+3. ng build
+4. npm start
+5. npm run e2e
+6. npm test --code-coverage
+7. View the application by visiting http://localhost:3000
+
+The application should list book details
+
+Title Author Year Quantity
