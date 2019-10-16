@@ -1,0 +1,19 @@
+<table>
+	<tbody>
+		<tr><th>Ticker</th><th>Price</th></tr>
+		<tr *ngFor="let stock of stocks | sortstock">
+			<td>{{ stock.ticker }}</td>
+			<td>{{ stock.price }}</td>
+		</tr>
+	</tbody>
+</table>
+<hr/>
+
+Create a new Stock<br/>
+
+<form [formGroup]="form">
+	<label>Ticker</label><input type="text" formControlName="ticker"/><br/>
+	<label>Price</label><input type="number" formControlName="price"/>
+</form>
+
+{{ newStock.price }}
