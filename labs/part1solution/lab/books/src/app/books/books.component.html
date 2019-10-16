@@ -1,0 +1,13 @@
+<p>Books</p>
+
+<table>
+	<tbody>
+		<tr><th>Title</th><th>Author</th><th>Year</th><th>Quantity</th></tr>
+		<tr *ngFor="let book of books">
+			<td>{{ book.title }}</td>
+			<td>{{ book.author }}</td>
+			<td>{{ book.year }}</td>
+			<td>{{ book.quantity }}</td>
+		</tr>
+	</tbody>
+</table>
