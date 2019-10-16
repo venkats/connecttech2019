@@ -1,0 +1,103 @@
+Advanced Angular Workshop: Creating Maintainable Angular apps Guided by Tests
+Venkat Subramaniam
+http://www.agiledeveloper.com/downloads.html
+venkats@agiledeveloper.com
+Twitter: @venkat_s
+
+URL: https://github.com/venkats/connecttech2019
+
+
+Angular Key parts:
+-Developing Rich Web Applications
+-Ajax + DOM
+-Components
+-Directives
+-Pipes
+-Services
+-Modules
+-A quick example
+-Exercise
+
+Reactive vs. Template Driven Forms:
+-template driven
+ -less JavaScript
+ -harder to test
+ -bind model to view, using ngModel
+ -asynchronous
+-model driven
+	-more JavaScript
+	-easier to test
+	-reactively create forms
+	-no direct binding, update does not mutate
+	-no ngModel
+	-synchronous
+-AbstractControls
+  -FormControl
+  -FormGroup
+  -FormArray 
+-Bring in ReactiveFormsModule into the AppModule
+-FormControl
+	-initial data
+	-validators
+	-async validators
+	-bind using formControl, no need for form
+-Creating a form
+-FormGroup
+ -bind form using [formGroup]
+ -bind controls using formControlName
+-using formGroup
+-Tedious, error prone, more work, verbose
+-using form builder - a DSL
+-validation
+  fieldName: ['...', [Validators.required...]]
+-using custom validators
+-setting an initial value
+-viewing the value
+-viewing the state
+  form.controls.fieldName.errors | json
+  form.controls.fieldName.valid
+  ...value
+  ...states
+-getting and setting a value
+-setValue vs. patchValue
+-Exercise
+
+Client-Side State Management:
+-state
+-client-side data
+-components need them
+-how to share
+-Redux data store
+-single store
+-create store
+-make change 
+-subscribe to change notifications
+-save state
+-Three principles of Redux
+ -single source of truth
+ -state is read-only
+ -changes made with pure functions
+-Key players
+ -state
+ -action
+ -reducers
+-state tree and transformations
+-action
+ -type and payload
+-reduces
+-creating a store
+-using local storage for persistence
+-transformations
+-subscribing to events
+-using in Angular
+-Exercise
+
+Test Driving Angular Applications:
+-Test Driven Development
+-Regression vs. Design Benefit
+-Why do TDD?
+-Empirical tests vs. Interaction tests
+-Measuring Code Coverage
+-Test Driving the Application
+-Exercise 
+
