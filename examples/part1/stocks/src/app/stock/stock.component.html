@@ -1,0 +1,9 @@
+<table>
+	<tbody>
+		<tr><th>Ticker</th><th>Price</th></tr>
+		<tr *ngFor="let stock of stocks | sortstock">
+			<td>{{ stock.ticker }}</td>
+			<td>{{ stock.price }}</td>
+		</tr>
+	</tbody>
+</table>
