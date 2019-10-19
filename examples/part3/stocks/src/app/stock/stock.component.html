@@ -1,0 +1,12 @@
+<table>
+	<tbody>
+		<tr><th>Ticker</th><th>Price</th><th></th></tr>
+		<tr *ngFor="let stock of stocks | async">
+			<td>{{ stock.ticker }}</td>
+			<td>{{ stock.price }}</td>
+			<td><button (click)="select(stock)">edit</button></td>
+		</tr>
+	</tbody>
+</table>
+<hr/>
+<editstock *ngIf="selectedStock"></editstock>

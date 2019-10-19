@@ -1,0 +1,7 @@
+<p>Edit Stock Price</p>
+
+<form [formGroup]="form">
+	<label>Ticker</label><input type="text" readonly formControlName="ticker"/><br/>
+	<label>Price</label><input type="number" min="0" formControlName="price"/><br/>
+	<button (click)="update()">update</button>
+</form>
