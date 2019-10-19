@@ -1,0 +1,8 @@
+<p>Edit Book</p>
+<form [formGroup]="form">
+	<label>Title</label> <input readonly="true" type="text" formControlName="title" /><br/>
+	<label>Author</label> <input readonly="true" type="text" formControlName="author" /><br/>
+	<label>Year</label> <input readonly="true" type="text" formControlName="year" /><br/>
+	<label>Quantity</label> <input type="number" formControlName="quantity" /><br/>
+	<input type="submit" (click)="update()"/>
+</form>
